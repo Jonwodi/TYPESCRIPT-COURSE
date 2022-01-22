@@ -89,3 +89,25 @@ let person2 = (data: {}): {} => {
 }
 console.log(person1({name: 'Jessica', age: 33, sex: 'female'}));
 
+// Arrays
+let shoppingCart: string[] = [];
+shoppingCart = ["Bread", "Pasta", "Chicken", "Milk"];
+shoppingCart.push("Beef", "Vegetable mix");
+shoppingCart[0] = "Oats";
+console.log(shoppingCart);
+
+// Array that accepts number or string values
+let skills: (number | string)[] = [];
+skills = ['python', 2015 ];
+console.table(skills);
+
+let oneToTen: number[] = [];
+oneToTen = []
+let n: number = number;
+n = 1;
+
+while (n < 11) {
+  console.log(oneToTen.push(n));
+  n++;
+}
+console.log(oneToTen);
