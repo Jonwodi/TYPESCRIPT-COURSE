@@ -1,4 +1,4 @@
-import { info } from "console";
+import console, { info } from "console";
 
 let number = 30;
 
@@ -111,3 +111,18 @@ while (n < 11) {
   n++;
 }
 console.log(oneToTen);
+
+// Type alias
+type Student = [string, boolean, number, Date];
+let student1: Student = ["James", true, 50, new Date];
+console.log(student1);
+
+type Point = {
+  x: number,
+  y: number,
+};
+let pt: Point = {x: 100, y: 100};
+let axis: Point = {x: 1000, y: -500};
+console.log(pt);
+console.log(axis);
+
