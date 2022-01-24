@@ -126,3 +126,30 @@ let axis: Point = {x: 1000, y: -500};
 console.log(pt);
 console.log(axis);
 
+// Interface
+interface Person {
+  id: number,
+  firstName: string,
+  lastName: string
+}
+
+let getName = (person: Person) => {
+  return `${person.firstName} ${person.lastName}`;
+}
+
+let john = {
+  id: 123,
+  firstName: 'John',
+  lastName: 'Smith'
+};
+
+let david = {
+  id: 246,
+  firstName: 'David',
+  lastName: 'Smith'
+};
+
+const FULLNAME = getName(john);
+const FULLNAME2 = getName(david);
+console.log(FULLNAME);
+console.log(FULLNAME2);
