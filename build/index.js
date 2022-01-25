@@ -155,3 +155,12 @@ class Job {
 }
 let jobTitle = new Job(55, 'Jamie', "Software Developer");
 console_1.default.log(jobTitle.getJobTitle());
+/* Placing interface between angled arrows (<Car>) before the empty object
+allows keys and values to be appended into empty object. */
+let car = {};
+car.brandName = "BMW";
+console_1.default.log(car);
+// Another method that allows keys and values to be appended into a empty object
+let car2 = {};
+car2.brandName = "Tesla";
+console_1.default.log(car2);

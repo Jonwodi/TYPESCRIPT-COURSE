@@ -196,3 +196,24 @@ class Job {
 
 let jobTitle = new Job(55, 'Jamie', "Software Developer");
 console.log(jobTitle.getJobTitle());
+
+
+// Type Assertion
+interface Car {
+  brandName: string,
+  model: string
+}
+/* Placing interface between angled arrows (<Car>) before the empty object 
+allows keys and values to be appended into empty object. */
+let car = <Car>{};
+car.brandName = "BMW";
+console.log(car);
+
+interface Vehicle {
+  brandName: string,
+  model: string
+}
+// Another method that allows keys and values to be appended into a empty object
+let car2 = {} as Vehicle;
+car2.brandName = "Tesla";
+console.log(car2);
