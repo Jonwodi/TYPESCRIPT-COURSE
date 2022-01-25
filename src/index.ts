@@ -112,6 +112,12 @@ while (n < 11) {
 }
 console.log(oneToTen);
 
+// Tuples
+type Driver = [string, Date, boolean, number];
+let frank:Driver = ["frank", new Date, true, 8];
+console.log(frank[0]);
+console.log(frank[3]);
+
 // Type alias
 type Student = [string, boolean, number, Date];
 let student1: Student = ["James", true, 50, new Date];

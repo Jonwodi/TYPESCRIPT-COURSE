@@ -101,6 +101,9 @@ while (n < 11) {
     n++;
 }
 console_1.default.log(oneToTen);
+let frank = ["frank", new Date, true, 8];
+console_1.default.log(frank[0]);
+console_1.default.log(frank[3]);
 let student1 = ["James", true, 50, new Date];
 console_1.default.log(student1);
 let pt = { x: 100, y: 100 };
