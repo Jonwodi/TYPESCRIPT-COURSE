@@ -107,3 +107,48 @@ let pt = { x: 100, y: 100 };
 let axis = { x: 1000, y: -500 };
 console_1.default.log(pt);
 console_1.default.log(axis);
+let getName = (person) => {
+    return `${person.firstName} ${person.lastName}`;
+};
+let john = {
+    id: 123,
+    firstName: 'John',
+    lastName: 'Smith'
+};
+let david = {
+    id: 246,
+    firstName: 'David',
+    lastName: 'Smith'
+};
+const FULLNAME = getName(john);
+const FULLNAME2 = getName(david);
+console_1.default.log(FULLNAME);
+console_1.default.log(FULLNAME2);
+// Class annotation
+class Teacher {
+    constructor(id, name, subject) {
+        this.id = id;
+        this.name = name;
+        this.subject = subject;
+    }
+    getSubject() {
+        return `${this.name} teaches the subject ${this.subject}`;
+    }
+}
+let teacher = new Teacher(12, 'Jamie', "Maths");
+console_1.default.log(teacher.getSubject());
+class Job {
+    constructor(id, name, job) {
+        this.id = id;
+        this.name = name;
+        this.job = job;
+        this.id = id;
+        this.name = name;
+        this.job = job;
+    }
+    getJobTitle() {
+        return `${this.name} works as a ${this.job}`;
+    }
+}
+let jobTitle = new Job(55, 'Jamie', "Software Developer");
+console_1.default.log(jobTitle.getJobTitle());

@@ -153,3 +153,40 @@ const FULLNAME = getName(john);
 const FULLNAME2 = getName(david);
 console.log(FULLNAME);
 console.log(FULLNAME2);
+
+// Class annotation
+class Teacher {
+  id: number;
+  name: string;
+  subject: string;
+
+  constructor(id: number, name: string, subject: string){
+    this.id = id;
+    this.name = name;
+    this.subject = subject;
+  }
+
+  getSubject(): string {
+    return `${this.name} teaches the subject ${this.subject}`;
+  }
+}
+
+let teacher = new Teacher(12, 'Jamie', "Maths");
+console.log(teacher.getSubject());
+
+
+
+class Job {
+  constructor(public id: number, public name: string, public job: string){
+    this.id = id;
+    this.name = name;
+    this.job = job;
+  }
+
+  getJobTitle(): string {
+    return `${this.name} works as a ${this.job}`;
+  }
+}
+
+let jobTitle = new Job(55, 'Jamie', "Software Developer");
+console.log(jobTitle.getJobTitle());
