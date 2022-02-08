@@ -217,3 +217,4 @@ interface Vehicle {
 let car2 = {} as Vehicle;
 car2.brandName = "Tesla";
 console.log(car2);
+
